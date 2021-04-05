@@ -9,7 +9,7 @@ import { Employee } from './employee.model';
 export class EmployeeService {
 
   private baseURL = 'http://localhost:3000';
-  private endpoint = 'employees';
+  private endpoint = 'employee';
 
   constructor(private httpClient: HttpClient) { }
 

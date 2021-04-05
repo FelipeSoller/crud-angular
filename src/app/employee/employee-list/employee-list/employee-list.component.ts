@@ -12,6 +12,8 @@ export class EmployeeListComponent implements OnInit {
 
   employees$: Observable<Employee[]>
 
+  displayedColumns = ['id', 'nome', 'email', 'telefone']
+
   constructor(private employeeService: EmployeeService) { }
 
   ngOnInit(): void {
