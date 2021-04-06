@@ -1,28 +1,51 @@
-# CrudAngular
+<h1 align="center">
+CRUD Simples realizado em Angular + Angular Material <br>
+</h1>
+<h3 align="center"> Aplicativo Web para cadastro simples de funcionários desenvolvido em Angular </h3>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
+## :bookmark_tabs: Índice
 
-## Development server
+- [Sobre](#sobre)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<a id="sobre"></a>
 
-## Code scaffolding
+## :bookmark: Sobre
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Aqui está uma rápida visão geral de como o Aplicativo Web foi desenvolvido:
 
-## Build
+Foi desenvolvido utilizando Angular e Angular Material;
+Criação de módulos específicos para listagem, adição e atualização de funcionários;
+Utilização de componentes do Angular Material no layout do aplicativo web; 
+Como usuário, deve-se conseguir adicionar, atualizar, remover e obter uma lista funcionários;
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+<a id="tecnologias-utilizadas"></a>
 
-## Running unit tests
+## :rocket: Tecnologias Utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+O projeto foi desenvolvido utilizando as seguintes tecnologias
 
-## Running end-to-end tests
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [Angular](https://angular.io/)
+- [Angular Material](https://material.angular.io/)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## :computer: WEB
 
-## Further help
+<h1 align="center">    
+    <img alt="Web" src="https://github.com/FelipeSoller/crud-angular/blob/main/Crud-Angular-1.JPG" width="900px">
+    <br>
+    <img alt="Web" src="https://github.com/FelipeSoller/crud-angular/blob/main/Crud-Angular-2.JPG" width="900px">
+    <br>
+    <img alt="Web" src="https://github.com/FelipeSoller/crud-angular/blob/main/Crud-Angular-3.JPG" width="900px">
+</h1>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# crud-angular
+
+---
+
+<h4 align="center">
+    Desenvolvido por <a href="https://www.linkedin.com/in/felipesoller/" target="_blank">Felipe Soller</a>
+</h4>
+
+
