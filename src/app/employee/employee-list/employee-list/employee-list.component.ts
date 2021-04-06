@@ -12,7 +12,7 @@ export class EmployeeListComponent implements OnInit {
 
   employees: Employee[];
 
-  displayedColumns = ['id', 'nome', 'email', 'telefone']
+  displayedColumns = ['id', 'nome', 'email', 'telefone', 'acao']
 
   constructor(private employeeService: EmployeeService) { }
 
