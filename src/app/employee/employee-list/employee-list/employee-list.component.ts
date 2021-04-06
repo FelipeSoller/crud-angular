@@ -10,18 +10,13 @@ import { EmployeeService } from '../../employee.service';
 })
 export class EmployeeListComponent implements OnInit {
 
-  employees$: Observable<Employee[]>
+  employees: Employee[];
 
   displayedColumns = ['id', 'nome', 'email', 'telefone']
 
   constructor(private employeeService: EmployeeService) { }
 
   ngOnInit(): void {
-    this.employeeList();
+    this.employees = this.employeeService.onGet();
   }
-
-  employeeList() {
-    this.employees$ = this.employeeService.list();
-  }
-
 }

@@ -1,7 +1,7 @@
 <mat-toolbar>Lista de Funcionários</mat-toolbar>
 
 <div class="component-container">
-  <div *ngIf="employees$ | async as employees; else carregando">
+  <div>
     <table mat-table [dataSource]="employees" class="mat-elevation-z8">
 
       <ng-container matColumnDef="id">
@@ -33,7 +33,5 @@
   </div>
 </div>
 
-<ng-template #carregando>
-  <mat-spinner></mat-spinner>
-</ng-template>
+
 
