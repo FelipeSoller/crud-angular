@@ -1,12 +1,12 @@
+import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { AddEditEmployeeComponent } from './employee/add-edit-employee/add-edit-employee.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'employees', loadChildren: () => import('./employee/employee-list/employee-list.module').then(module => module.EmployeeListModule) },
-  { path: 'employees/add', loadChildren: () => import('./employee/add-edit-employee/add-edit-employee.module').then(module => module.AddEditEmployeeModule) },
-  { path: 'employees/edit/:id', loadChildren: () => import('./employee/add-edit-employee/add-edit-employee.module').then(module => module.AddEditEmployeeModule) },
+  { path: '', component: EmployeeListComponent },
+  { path: 'employees/add/:id', component: AddEditEmployeeComponent },
+  { path: 'employees/edit/:id', component: AddEditEmployeeComponent },
 ];
 
 @NgModule({
