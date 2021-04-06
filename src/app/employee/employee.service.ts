@@ -7,13 +7,24 @@ import { Employee } from './employee.model';
   providedIn: 'root'
 })
 export class EmployeeService {
+  employees: Employee[] = [
+    {
+      id: 1,
+      name: "Employee One",
+      email: "employeeone@example.com",
+      phone: 123456789
+    },
+    {
+      id: 2,
+      name: "Employee Two",
+      email: "employetwo@example.com",
+      phone: 987654321
+    }
+  ];
 
-  private baseURL = 'http://localhost:3000';
-  private endpoint = 'employee';
+  constructor() { }
 
-  constructor(private httpClient: HttpClient) { }
-
-  list():Observable<Employee[]>{
-    return this.httpClient.get<Employee[]>(`${this.baseURL}/${this.endpoint}`);
+  onGet() {
+    return this.employees;
   }
 }
