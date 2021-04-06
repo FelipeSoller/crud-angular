@@ -1,0 +1,32 @@
+<mat-toolbar>
+    <span>{{ header }}</span>
+</mat-toolbar>
+
+<div>
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <mat-form-field class="example-full-width">
+      <mat-label>Id</mat-label>
+      <input matInput autocomplete="off" [ngModel]="employee.id" name="id">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="João Ninguém" autocomplete="off" [ngModel]="employee.name" name="name">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="joaoninguem@email.com" autocomplete="off" [ngModel]="employee.email" name="email">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Telefone</mat-label>
+      <input matInput placeholder="XX 12345-6789" autocomplete="off" [ngModel]="employee.phone" name="phone">
+    </mat-form-field>
+
+    <div class="button">
+      <button mat-raised-button color="primary" type="submit">Salvar</button>
+      <button id="cancel" type="button" mat-raised-button routerLink="/employees" color="warn">Cancelar</button>
+    </div>
+  </form>
+</div>
